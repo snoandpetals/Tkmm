@@ -41,7 +41,7 @@ jobs:
           -r ${{ matrix.config.runtime }} \
           -c Release \
           --sc false \
-          --version-suffix ${{ github.event.release.tag_name }} \
+          --version-suffix 1.0.0 \
           -o ${{ matrix.config.name }} \
           -p:Version=1.0.0
 
@@ -73,7 +73,7 @@ jobs:
           -r ${{ matrix.config.runtime }} \
           -c Release \
           --sc false \
-          --version-suffix ${{ github.event.release.tag_name }} \
+          --version-suffix 1.0.0 \
           -o Launcher/${{ matrix.config.name }} \
           -p:Version=1.0.0
 
