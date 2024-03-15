@@ -43,7 +43,7 @@ jobs:
           --sc false \
           --version-suffix ${{ github.event.release.tag_name }} \
           -o ${{ matrix.config.name }} \
-          -p:Version=${{ github.event.release.tag_name }}
+          -p:Version=1.0.0
 
       - name: Rename executable
         shell: bash
