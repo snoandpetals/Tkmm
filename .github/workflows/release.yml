@@ -61,10 +61,9 @@ jobs:
           path: ./**
 
       - name: Upload artifacts
-        uses: AButler/upload-release-assets@v2.0
+        uses: actions/upload-artifact@v4
         with:
           files: TKMM-${{ matrix.config.runtime }}.zip
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish TKMM Launcher
         shell: bash
@@ -86,7 +85,7 @@ jobs:
           path: ./**
 
       - name: Upload artifacts
-        uses: AButler/upload-release-assets@v2.0
+        uses: actions/upload-artifact@v4
         with:
           files: TKMM-Launcher-${{ matrix.config.runtime }}.zip
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+    
