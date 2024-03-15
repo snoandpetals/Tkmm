@@ -63,7 +63,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          files: TKMM-${{ matrix.config.runtime }}.zip
+          path: TKMM-${{ matrix.config.runtime }}.zip
 
       - name: Publish TKMM Launcher
         shell: bash
@@ -87,5 +87,5 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          files: TKMM-Launcher-${{ matrix.config.runtime }}.zip
+          path: TKMM-Launcher-${{ matrix.config.runtime }}.zip
     
