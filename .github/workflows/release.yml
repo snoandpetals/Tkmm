@@ -75,7 +75,7 @@ jobs:
           --sc false \
           --version-suffix ${{ github.event.release.tag_name }} \
           -o Launcher/${{ matrix.config.name }} \
-          -p:Version=${{ github.event.release.tag_name }}
+          -p:Version=1.0.0
 
       - name: Archive Build Files
         uses: TheDoctor0/zip-release@0.7.1
